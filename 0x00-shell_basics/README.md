@@ -1,0 +1,1 @@
+This project contains a series of shell scripts to be executing by the bash shell that will do various things with the basic commands in the Linux terminal
