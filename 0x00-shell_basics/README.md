@@ -1,4 +1,4 @@
-#*List of Scripts From This Assignment*#
+#List of Scripts From This Assignment
 
 0-current_working_directory: Displays the current working directory
 
