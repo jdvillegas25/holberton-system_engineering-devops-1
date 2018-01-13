@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 2 -type f -name "*.js" -ls
+find . -type f -name "*.js" -ls
