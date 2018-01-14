@@ -56,11 +56,11 @@
 
 **18-commas**
 > Lists files and directories in the current directory as a comma separated list with the following requirements
-* Directory names end in slashes
-* Files and directories start with . should be listed
-* Listings should be in alphabetical order except . and .. which should be at the beginning
-* Only digits and letters are used to sort where digits should come first
-* Listing should end with a new line
+> * Directory names end in slashes
+> * Files and directories start with . should be listed
+> * Listings should be in alphabetical order except . and .. which should be at the beginning
+> * Only digits and letters are used to sort where digits should come first
+> * Listing should end with a new line
 
 ### Advanced/Optional Script Assignments
 
