@@ -69,3 +69,16 @@
 **22-users_and_homes**
 > This script will display all users and their home directories in the file ```/etc/passwd```, sorted by the users.
 
+## Advanced/Optional Script Assignments
+
+**100-empty_casks**
+> This script will find all empty files and directories including hidden files and directories in the current directory and all sub-directories and displays their names only (no path sequences).
+
+**101-gifs**
+> This script will list all the files with a ```.gif``` extension in the current directory and all sub-directories including hidden files. Only regular files are going to be listed and the names will be displayed without extensions and sorted by byte values and case-insensitively.
+
+**102-acrostic**
+> This script will take an acrostic poem as input and display the 'decoded' message. An acrostic poem, for those who don't know, is a poem where the first letter of each line forms a hidden message or word.
+
+**103-the_biggest_fan**
+> This script parses web server logs in ```TSV``` format as input and will display the 11 hosts or IP addresses which did the most requests. The ones with the highest number of requests will be at the top and the ones with the smallest number of requests will be at the bottom of the list of 11.
