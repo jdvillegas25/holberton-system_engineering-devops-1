@@ -1,4 +1,4 @@
-# List of Scripts From This Assignment
+# List of Scripts From This Assignment (Shell Basics)
 
 **0-current_working_directory**
 > Displays the current working directory
