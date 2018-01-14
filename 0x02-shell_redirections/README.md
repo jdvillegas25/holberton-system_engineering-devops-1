@@ -1,4 +1,4 @@
-# List of Scripts in This Assignment
+# List of Scripts in This Assignment (Shell Redirections)
 
 **0-hello_world**
 > This script will print ```"Hello, World"``` followed by a new line to the standard output.
