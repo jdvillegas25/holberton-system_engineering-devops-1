@@ -11,7 +11,7 @@ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.ba
 redirect="\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
 sudo sed -i "37i\ $redirect" /etc/nginx/sites-available/default
 sudo touch /usr/share/nginx/html/404error.html
-echo "Ceci n'est pas une page\n" | sudo tee -a /usr/share/nginx/html/404error.html
+echo -e "Ceci n'est pas une page\n" | sudo tee -a /usr/share/nginx/html/404error.html
 errorpage="\n\terror_page 404 /404error.html;\n\tlocation = /404error.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n\t}"
 sudo sed -i "37i\ $errorpage" /etc/nginx/sites-available/default
 sudo service nginx reload
