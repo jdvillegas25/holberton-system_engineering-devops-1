@@ -23,7 +23,7 @@ def deploy():
 
     put("holbertonwebapp.tar.gz", "/tmp/")
     run("mkdir /tmp/holbertonwebapp/")
-    run("tar -xvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp/")
+    run("tar -zxvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp/")
 
 
 def clean():
