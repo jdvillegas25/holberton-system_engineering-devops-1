@@ -23,7 +23,7 @@ def deploy():
     archive contents into this directory
     '''
 
-    put("./holbertonwebapp.tar.gz", "/tmp/")
+    put("holbertonwebapp.tar.gz", "/tmp/")
     run("mkdir /tmp/holbertonwebapp/")
     run("tar -zxvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp/")
 
