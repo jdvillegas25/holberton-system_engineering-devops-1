@@ -4,7 +4,7 @@ Fabric file for transferring a file to a remote server from local machine
 
 from fabric.api import *
 env.user = 'ubuntu'
-
+env.key_filename = '~/.ssh/holberton'
 
 def pack():
     """
