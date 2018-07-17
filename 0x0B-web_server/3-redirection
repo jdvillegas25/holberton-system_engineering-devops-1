@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Installs NGINX
-# NGINX should be listening on port 80
-# When requesting a page with curl, it must return a page that contains "Holberton School"
+# Redirects to another page when accessing the page /redirect_me
+# The redirection is a 301
 
 sudo apt-get update
 sudo apt-get -y install nginx
