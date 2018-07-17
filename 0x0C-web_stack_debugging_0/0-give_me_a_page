@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Web-stack debugging - returns "Hello Holberton" when curl queries the root
+# of an Apache web server
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install apache2 apache2-doc apache2-utils
+sudo service apache2 start
