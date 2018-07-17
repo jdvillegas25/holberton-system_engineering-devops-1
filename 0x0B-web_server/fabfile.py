@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 '''
 Fabric file for transferring a file to a remote server from local machine
 '''
