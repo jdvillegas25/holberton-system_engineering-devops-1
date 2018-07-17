@@ -3,7 +3,7 @@
 # NGINX should be listening on port 80
 # When requesting a page with curl, it must return a page that contains "Holberton School"
 
-apt-get update
-apt-get -y install nginx
-service nginx start
-echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo service nginx start
+echo "Holberton School for the win!" | sudo tee -a /usr/share/nginx/html/index.html
