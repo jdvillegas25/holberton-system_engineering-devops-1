@@ -13,7 +13,7 @@ def pack():
     Packages the current directory into a .tar.gz archive
     '''
 
-    local("tar --exclude='*.tar.gz' -zcvf holbertonwebapp.tar.gz .")
+    local("tar --exclude='*.tar.gz' -cvf holbertonwebapp.tar.gz .")
 
 
 def deploy():
@@ -25,7 +25,7 @@ def deploy():
 
     put("holbertonwebapp.tar.gz", "/tmp/")
     run("mkdir /tmp/holbertonwebapp/")
-    run("tar -zxvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp/")
+    run("tar -xvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp/")
 
 
 def clean():
