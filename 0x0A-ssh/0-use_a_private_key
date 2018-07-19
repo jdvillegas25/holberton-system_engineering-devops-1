@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Logs into the Holberton server with a private key identity file
-ssh -i ~/.ssh/holberton ubuntu@35.237.75.27
+ssh -i ~/.ssh/holberton ubuntu@35.237.197.183
