@@ -20,7 +20,7 @@ def deploy():
     creates a holbertonwebapp folder, and extracts the
     archive contents into this directory
     """
-
+    local("pack")
     put("holbertonwebapp.tar.gz", "/tmp/")
     run("mkdir /tmp/holbertonwebapp/")
     run("tar -zxvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp/")
