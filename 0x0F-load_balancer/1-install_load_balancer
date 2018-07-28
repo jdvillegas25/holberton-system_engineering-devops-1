@@ -14,6 +14,8 @@ config="frontend web-frontend\n\tbind *:80\n\tmode http\n\tdefault_backend web-b
 \nbackend web-backend\n
 \tbalance roundrobin\n
 \tmode http\n
-\tserver web-01 35.237.197.183:80 check\n
-\tserver web-02 35.237.134.117:80 check"
-sed -i "21i\ $config" /etc/haproxy/haproxy.cg
+\tserver 300-web-01 35.237.197.183:80 check\n
+\tserver 300-web-02 35.237.134.117:80 check\n"
+sed -i "21i\ $config" /etc/haproxy/haproxy.cgi
+sudo service haproxy reload
+sudo service haproxy restart
