@@ -39,12 +39,12 @@ defaults
         option http-server-close
 
 frontend www-http
-        bind 35.231.228.196:80
+        bind *:80
         reqadd X-Forwarded-Proto:\ http
         default_backend www-backend
 
 frontend www-https
-        bind 35.231.228.196:443 ssl crt /etc/haproxy/certs/www.derekkwok.online.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.derekkwok.online.pem
         reqadd X-Forwarded-Proto:\ https
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
