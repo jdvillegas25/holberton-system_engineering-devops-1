@@ -1,4 +1,4 @@
-# Holberton School Higher-Level Programming
+# Holberton School System Engineering Devops
 
 ## Overview
 The following project consisted of writing up a bunch of scripts using bash syntax and interpretation to do various things in a Linux terminal. The primary purpose of this project was to get familiar with bash, bash scripting, and the Linux terminal as a whole. So far, there are scripts that do basic commands such as ls and cd, scripts that change the permissions of files, and scripts that redirect input and output. This file will be updated as more assignments are added.
@@ -6,7 +6,11 @@ The following project consisted of writing up a bunch of scripts using bash synt
 ## Software
 * Ubuntu 14.04.5 LTS (trusty)
 * Vagrant 2.0.1 (Virtualbox)
-* 
+* bash 4.3.11
+* NGINX 1.4.6
+* HAProxy 1.5 and 1.6
+* ufw 0.45~rc-0ubuntu2
+* Puppet 3.4.3
 
 ## Repositories
 0. **[0x00-shell_basics](https://github.com/dkwok94/holberton-system_engineering-devops/tree/master/0x00-shell_basics)**
