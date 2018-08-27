@@ -3,8 +3,8 @@
 Pings a To-Do API for data and displays tasks completed
 and tasks done for a specified user
 """
-from sys import argv
 import requests
+from sys import argv
 
 if __name__ == '__main__':
     employee_id = argv[1]
