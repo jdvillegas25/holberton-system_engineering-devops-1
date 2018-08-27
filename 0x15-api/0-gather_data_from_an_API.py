@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-
+Pings a To-Do API for data and displays tasks completed
+and tasks done for a specified user
 """
 import requests
 from sys import argv
@@ -27,4 +28,4 @@ if __name__ == '__main__':
         .format(employee, len(done_tasks), total_tasks))
     
     for task in done_tasks:
-        print("\t{}".format(task['title']))
+        print("\t {}".format(task['title']))
