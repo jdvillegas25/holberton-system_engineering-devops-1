@@ -17,7 +17,6 @@ if __name__ == '__main__':
     todo_dict_list = todo.json()
     user_dict_list = user.json()
     task_list = []
-    task_dict = {}
     user_tasks = {}
     employee = user_dict_list[0]['username']
 
@@ -25,6 +24,7 @@ if __name__ == '__main__':
         for task in todo_dict_list:
             status = task['completed']
             title = task['title']
+            task_dict = {}
             task_dict['task'] = title
             task_dict['completed'] = status
             task_dict['username'] = employee
