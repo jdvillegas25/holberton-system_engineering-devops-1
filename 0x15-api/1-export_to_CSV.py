@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Pings a To-Do API for data and displays tasks completed
-and tasks done for a specified user
+Pings a To-Do API for data on a specified user and saves the data to a CSV file
 """
 import csv
 import requests
