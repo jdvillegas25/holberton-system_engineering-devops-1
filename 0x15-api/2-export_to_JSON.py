@@ -30,6 +30,6 @@ if __name__ == '__main__':
             task_dict['username'] = employee
             task_list.append(task_dict)
         user_tasks[employee_id] = task_list
-    
+
         data = json.dumps(user_tasks)
         jsonfile.write(data)
