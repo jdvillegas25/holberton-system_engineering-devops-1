@@ -16,7 +16,7 @@ if __name__ == '__main__':
     todo_dict_list = todo.json()
     user_dict_list = user.json()
 
-    employee = user_dict_list[0]['username']
+    employee = user_dict_list[0].get('username')
 
     with open("{}.csv".format(employee_id), "a+") as csvfile:
         csvwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)

@@ -18,12 +18,12 @@ if __name__ == '__main__':
     user_dict_list = user.json()
     task_list = []
     user_tasks = {}
-    employee = user_dict_list[0]['username']
+    employee = user_dict_list[0].get('username')
 
     with open("{}.json".format(employee_id), "a+") as jsonfile:
         for task in todo_dict_list:
-            status = task['completed']
-            title = task['title']
+            status = task.get('completed')
+            title = task.get('title')
             task_dict = {}
             task_dict['task'] = title
             task_dict['completed'] = status
