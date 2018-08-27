@@ -3,8 +3,8 @@
 Pings a To-Do API for data and displays tasks completed
 and tasks done for a specified user
 """
-import requests
 from sys import argv
+import requests
 
 if __name__ == '__main__':
     employee_id = argv[1]
@@ -25,7 +25,7 @@ if __name__ == '__main__':
             done_tasks.append(task)
 
     print("Employee {} is done with tasks({}/{}):"
-        .format(employee, len(done_tasks), total_tasks))
-    
+          .format(employee, len(done_tasks), total_tasks))
+
     for task in done_tasks:
         print("\t {}".format(task['title']))
