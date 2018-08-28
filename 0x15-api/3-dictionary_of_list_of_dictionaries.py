@@ -32,6 +32,5 @@ if __name__ == '__main__':
             task_list.append(task_dict)
         user_tasks[employee_id] = task_list
 
-    with open("todo_all_employees.json", "a+") as jsonfile:
-        data = json.dumps(user_tasks)
-        jsonfile.write(data)
+    with open("todo_all_employees.json", "w+") as jsonfile:
+        json.dump(user_tasks, jsonfile)
