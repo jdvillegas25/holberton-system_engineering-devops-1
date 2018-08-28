@@ -20,7 +20,7 @@ if __name__ == '__main__':
     user_tasks = {}
     employee = user_dict_list[0].get('username')
 
-    with open("{}.json".format(employee_id), "a+") as jsonfile:
+    with open("{}.json".format(employee_id), "w+") as jsonfile:
         for task in todo_dict_list:
             status = task.get('completed')
             title = task.get('title')
