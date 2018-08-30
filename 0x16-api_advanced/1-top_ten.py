@@ -19,7 +19,6 @@ def top_ten(subreddit):
         data = req.get('data')
         children = data.get('children')
         if data is not None and children is not None:
-            posts = ""
             for post in children:
                 post_data = post.get('data')
                 title = post_data.get('title')
